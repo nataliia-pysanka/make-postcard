@@ -31,13 +31,24 @@ body{
 
 .slide{
     border: 2px dashed #000000;
-    font-family: 'Oooh Baby', cursive;
     border-radius: 15px;
     flex: 2;
     text-align: center;
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.slide.active{
+  border: 2px solid #fff;
+}
+
+.slide p,
+ textarea {
+    font-family: 'Oooh Baby', cursive;
+    font-size: 25px;
+    font-weight: 500;
+    color: #5256ad;
 }
 
 .side-box {
@@ -64,6 +75,7 @@ textarea {
     width: 210px;
     align: center;
     resize: none;
+    padding: 5px;
 }
 
 input[type=submit] {
@@ -101,4 +113,8 @@ input[type=submit] {
     color: #ffffff;
     font-size: 9vh;
     text-decoration: none;
+}
+
+.hidden {
+    display: none;
 }
