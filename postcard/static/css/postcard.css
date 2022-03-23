@@ -1,0 +1,120 @@
+/*@import url('https://fonts.googleapis.com/css2?family=Alex+Brush&display=swap');*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oooh+Baby&display=swap');
+
+* {
+    box-sizing: content-box;
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+  min-height: 100vh;
+  background: #c1cfe6;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.main {
+    margin: 10px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: stretch;
+}
+
+.slide{
+    border: 2px dashed #000000;
+    border-radius: 15px;
+    flex: 2;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.slide.active{
+  border: 2px solid #fff;
+}
+
+.slide p,
+ textarea {
+    font-family: 'Oooh Baby', cursive;
+    font-size: 25px;
+    font-weight: 500;
+    color: #5256ad;
+}
+
+.side-box {
+    padding: 20px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    flex-direction: column;
+}
+
+ul {
+    padding-left: 0px;
+    font-size: 2vh;
+    min-font-size: 10px;
+}
+
+li {
+    padding: 0 0 10px 0;
+}
+
+textarea {
+    height: 170px;
+    width: 210px;
+    align: center;
+    resize: none;
+    padding: 5px;
+}
+
+input[type=submit] {
+    margin: 10px;
+}
+
+#browse_btn,
+#greet_btn {
+    padding: 10px 25px;
+    font-size: 15px;
+    font-weight: 500;
+    border: none;
+    outline: none;
+    background: #fff;
+    color: #5256ad;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.page-header {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 0 30px 0;
+    background-color: #0c629b;
+    width: 100%;
+}
+
+.page-header h1,
+.page-header h1 a,
+.page-header h1 a:visited,
+.page-header h1 a:active {
+    /*font-family: 'Alex Brush', cursive;*/
+    font-family: 'Oooh Baby', cursive;
+    color: #ffffff;
+    font-size: 9vh;
+    text-decoration: none;
+}
+
+.hidden {
+    display: none;
+}
